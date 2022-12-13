@@ -22,6 +22,6 @@ test('attack on the hero', () => {
   expect(daemon.health).toBe(60);
 });
 
-test('attack without stoned', () => {
+test('checking for incorrect distance', () => {
   expect(magician.getAttack(-7)).toBe(0);
 });
