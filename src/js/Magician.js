@@ -1,4 +1,4 @@
-import Hero from './app';
+import Hero from './Hero';
 
 export default class Magician extends Hero {
   constructor(health, attack, stoned) {

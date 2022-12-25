@@ -5,7 +5,6 @@ export default class Hero {
     this.stoned = false;
   }
 
-  // eslint-disable-next-line class-methods-use-this
   get stoned() {
     return this.stoned;
   }
