@@ -1,8 +1,8 @@
 import Magician from '../Magician';
 import Daemon from '../Daemon';
 
-const magician = new Magician();
-const daemon = new Daemon();
+const magician = new Magician(80, 100);
+const daemon = new Daemon(100, 100);
 
 test('attack without stoned', () => {
   expect(magician.getAttack(7)).toBe(40);
@@ -11,10 +11,6 @@ test('attack without stoned', () => {
 test('attack with stoned', () => {
   daemon.stoned = true;
   expect(daemon.getAttack(5)).toBe(48);
-});
-
-test('to induce a stoned', () => {
-  expect(magician.stoned).toBeTruthy();
 });
 
 test('attack on the hero', () => {

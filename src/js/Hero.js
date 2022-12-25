@@ -6,11 +6,11 @@ export default class Hero {
   }
 
   get stoned() {
-    return this.stoned;
+    return this._stoned;
   }
 
   set stoned(value) {
-    this.stoned = value;
+    this._stoned = value;
   }
 
   setAttack(value) {
